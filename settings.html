@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  
+<title>Dashboard - Hosting Control Panel</title>
+	
+<meta name="author" content="GadgetPodda">
+<meta name="description" content="description here">
+<meta name="keywords" content="keywords,here">
+  
+<!-- Favourites Icon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css" />
+  
+<!-- UI Kit -->
+<link rel="stylesheet" href="css/uikit.css" />
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+  
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+
+<nav class="uk-navbar-container" uk-navbar>
+  <div class="uk-navbar-left">
+    <ul class="uk-navbar-nav">
+      <a href="index.html" class="uk-navbar-item uk-logo">Control Panel</a>
+    </ul>
+  </div>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li><a href="upgrade.html"><span uk-icon="icon: credit-card"></span>  Upgrade Plan</a></li>
+      <li><a href="account.html"><span uk-icon="icon: user"></span>  My Account</a></li>
+	  <li><a href="#" uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: menu"></span>  Menu</a></li>
+    </ul> 
+  </div>
+</nav>
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: grid"></span> Dashboard</a></li>
+            <li><a href="domains.html"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Domains</a></li>
+            <li><a href="emails.html"><span class="uk-margin-small-right" uk-icon="icon: mail"></span> Email Accounts</a></li>
+            <li><a href="dbs.html"><span class="uk-margin-small-right" uk-icon="icon: database"></span> Databases</a></li>
+			<li><a href="filemang.html"><span class="uk-margin-small-right" uk-icon="icon: folder"></span> File Manager</a></li>
+			<li><a href="ftp.html"><span class="uk-margin-small-right" uk-icon="icon: cloud-upload"></span> FTP Accounts</a></li>
+			<li><a href="backup.html"><span class="uk-margin-small-right" uk-icon="icon: server"></span> Backups</a></li>
+			<li><a href="tools.html"><span class="uk-margin-small-right" uk-icon="icon: cog"></span> Tools</a></li>
+			<li class="uk-active"><a href="settings.html"><span class="uk-margin-small-right" uk-icon="icon: settings"></span> Settings</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<h1 class="title uk-text-center uk-heading-line"><span>Settings</span></h1>
+<hr class="uk-divider-icon">
+
+<h3 class="uk-text-lead uk-text-center">Your Password</h3>
+<form action="" method="post">
+  <fieldset class="uk-field-set uk-text-center">
+    <input class="uk-input domainname" type="text" placeholder="Current Password" name="cpass"><br>
+	<input class="uk-input domainname" type="text" placeholder="New Password" name="npass"><br>
+	<input class="uk-input domainname" type="text" placeholder="Confirm New Password" name="cnpass"><br>
+    <input type="submit" class="uk-button uk-button-primary" value="Change">
+  </fieldset>
+</form>
+
+<hr class="uk-divider-icon">
+
+<h3 class="uk-text-lead uk-text-center">PHP Version</h3>
+<div class="uk-container backwhite uk-padding-large uk-text-center uk-align-center">
+<ul class="uk-subnav uk-subnav-pill" uk-switcher>
+    <li><a href="#">1.0</a></li>
+    <li><a href="#">2.0</a></li>
+	<li><a href="#">3.0</a></li>
+    <li><a href="#">4.0</a></li>
+    <li><a href="#">5.0</a></li>
+	<li><a href="#">6.0</a></li>
+    <li><a href="#">7.0</a></li>
+    <li><a href="#">7.0.2</a></li>
+</ul>
+
+<ul class="uk-switcher uk-margin">
+    <li><span class="uk-text-danger">Outdated Version. Any PHP Script won't work.</span></li>
+	<li><span class="uk-text-danger">Outdated Version. 250 PHP Scripts won't work.</span></li>
+	<li><span class="uk-text-danger">Outdated Version. 225 PHP Scripts won't work.</span></li>
+	<li><span class="uk-text-danger">Outdated Version. 210 PHP Scripts won't work.</span></li>
+	<li><span class="uk-text-danger">Outdated Version. 205 PHP Scripts won't work.</span></li>
+    <li><span class="uk-text-danger">Outdated Version. 115 PHP Scripts won't work.</span></li>
+    <li><span class="uk-text-warning">Outdated Version. 25 PHP Scripts won't work.</span></li>
+    <li><span class="uk-text-success">Latest Version. Supports all Scripts.</span></li>
+</ul>
+</div>
+
+<hr class="uk-divider-icon">
+
+<h3 class="uk-text-lead uk-text-center">MySQL Version</h3>
+<div class="uk-container backwhite uk-padding-large uk-text-center uk-align-center">
+<ul class="uk-subnav uk-subnav-pill" uk-switcher>
+    <li><a href="#">1.0</a></li>
+    <li><a href="#">2.0</a></li>
+	<li><a href="#">3.0</a></li>
+    <li><a href="#">4.0</a></li>
+    <li><a href="#">5.0</a></li>
+</ul>
+
+<ul class="uk-switcher uk-margin">
+	<li><span class="uk-text-danger">Outdated Version. 210 PHP Scripts won't work.</span></li>
+	<li><span class="uk-text-danger">Outdated Version. 205 PHP Scripts won't work.</span></li>
+    <li><span class="uk-text-danger">Outdated Version. 115 PHP Scripts won't work.</span></li>
+    <li><span class="uk-text-warning">Outdated Version. 25 PHP Scripts won't work.</span></li>
+    <li><span class="uk-text-success">Latest Version. Supports all Scripts.</span></li>
+</ul>
+</div>
+
+
+<section class="uk-section uk-section-primary uk-light">
+  <h1 class="uk-text-lead uk-text-center">&copy; 2019 <a href="index.html">Hosting Control Panel</a>. All Rights Reserved.</h1>
+</section>
+
+
+<a href="#" class="totop" uk-scroll uk-totop></a>
+</body>
+  
+</html>

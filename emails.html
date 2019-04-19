@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  
+<title>Emails - Hosting Control Panel</title>
+	
+<meta name="author" content="GadgetPodda">
+<meta name="description" content="description here">
+<meta name="keywords" content="keywords,here">
+  
+<!-- Favourites Icon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css" />
+  
+<!-- UI Kit -->
+<link rel="stylesheet" href="css/uikit.css" />
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+  
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+<nav class="uk-navbar-container" uk-navbar>
+  <div class="uk-navbar-left">
+    <ul class="uk-navbar-nav">
+      <a href="index.html" class="uk-navbar-item uk-logo">Control Panel</a>
+    </ul>
+  </div>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li><a href="#" uk-toggle="target: #upgrade"><span uk-icon="icon: credit-card"></span>  Upgrade Plan</a></li>
+      <li><a href="#" uk-toggle="target: #accounts"><span uk-icon="icon: user"></span>  My Account</a></li>
+	  <li><a href="#" uk-toggle="target: #offcanvas-nav-primary"><span uk-icon="icon: menu"></span>  Menu</a></li>
+    </ul>
+	<div id="accounts" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+	    <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">My Account</h2>
+         <div class="uk-card uk-card-primary uk-card-body">
+            <p>
+			CP Username : hosting_00001<br>
+			CP Password : password123@@@<br>
+			<hr>
+			FTP Username : hosting_00001<br>
+			FTP Password : password123@@@<br>
+			<hr>
+			MySQL Username : hosting_00001<br>
+			MySQL Password : password123@@@<br>
+			</p>
+         </div>
+      </div>
+    </div>
+	<div id="upgrade" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+	    <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">Upgrade Plan</h2>
+         <div class="uk-card uk-card-primary uk-card-body">
+            <p>
+			<b>Current Plan</b> : FREE<br>
+			<form action="" method="post">
+              <fieldset class="uk-field-set uk-text-center">
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                  <label><input class="uk-radio" type="radio" name="plan" checked> Basic Plan (0.99$ per month)</label>
+                  <label><input class="uk-radio" type="radio" name="plan"> Professional Plan (3.99$ per month)</label>
+                </div>
+				<div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                  <label><input class="uk-radio" type="radio" name="bill" checked> Pay Monthly (Free .INFO Domain)</label>
+                  <label><input class="uk-radio" type="radio" name="bill"> Pay Yearly (Free .COM Domain)</label>
+                </div>
+                <input type="submit" class="uk-button uk-button-primary" value="Upgrade Plan">
+			  </fieldset>
+			</form>			
+			</p>
+         </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li><a href="index.html"><span class="uk-margin-small-right" uk-icon="icon: grid"></span> Dashboard</a></li>
+            <li><a href="domains.html"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Domains</a></li>
+            <li class="uk-active"><a href="emails.html"><span class="uk-margin-small-right" uk-icon="icon: mail"></span> Email Accounts</a></li>
+            <li><a href="dbs.html"><span class="uk-margin-small-right" uk-icon="icon: database"></span> Databases</a></li>
+			<li><a href="filemang.html"><span class="uk-margin-small-right" uk-icon="icon: folder"></span> File Manager</a></li>
+			<li><a href="ftp.html"><span class="uk-margin-small-right" uk-icon="icon: cloud-upload"></span> FTP Accounts</a></li>
+			<li><a href="backup.html"><span class="uk-margin-small-right" uk-icon="icon: server"></span> Backups</a></li>
+			<li><a href="tools.html"><span class="uk-margin-small-right" uk-icon="icon: cog"></span> Tools</a></li>
+        </ul>
+
+    </div>
+</div>
+
+<h1 class="title uk-text-center uk-heading-line"><span>Manage Your Email Accounts</span></h1>
+
+<form action="" method="post">
+  <fieldset class="uk-field-set uk-text-center">
+    <input class="uk-input textbox" type="text" placeholder="Prefix" name="prefix">
+	<select class="uk-select">
+      <option>example.com</option>
+      <option>example.net</option>
+	  <option>example.net</option>
+    </select>
+    <input type="submit" class="uk-button uk-button-primary" value="Add Email">
+  </fieldset>
+</form>
+
+<hr class="uk-divider-icon">
+
+<div class="uk-alert-primary uk-align-center alert" uk-alert>
+Login to Web mail to view your email inbox.<br>
+<button class="uk-button uk-button-primary">Login</button>
+</div>
+<table class="uk-table uk-table-hover uk-table-divider uk-text-center">
+    <thead>
+        <tr>
+            <th class="uk-text-center">Email</th>
+            <th class="uk-text-center">Password</th>
+            <th class="uk-text-center">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>admin@example.com</td>
+            <td>********</td>
+            <td><button class="uk-button uk-button-danger">Delete</button></td>
+        </tr>
+        <tr>
+            <td>board@example.org</td>
+            <td>********</td>
+            <td><button class="uk-button uk-button-danger">Delete</button></td>
+        </tr>
+        <tr>
+            <td>support@example.net</td>
+            <td>********</td>
+            <td><button class="uk-button uk-button-danger">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<section class="uk-section uk-section-primary uk-light">
+  <h1 class="uk-text-lead uk-text-center">&copy; 2019 <a href="index.html">Hosting Control Panel</a>. All Rights Reserved.</h1>
+</section>
+
+<a href="#" class="totop" uk-scroll uk-totop></a>
+</body>
+  
+</html>

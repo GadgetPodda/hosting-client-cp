@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis|PT+Sans|Montserrat);
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	background-color: #cfcfcf;
+}
+.uk-navbar-nav a {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+.uk-navbar-nav li a {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+.uk-navbar-nav a:hover, .uk-navbar-nav li a:hover {
+	color: #efefef;
+}
+
+.title {
+	text-transform: uppercase;
+}
+.statgrid {
+	padding: 15px 15px;
+}
+.hover:hover {
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(107,107,107,1);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(107,107,107,1);
+    box-shadow: 0px 0px 50px 0px rgba(107,107,107,1);
+}
+.progress {
+	width: 50%;
+}
+.totop {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	color: #000;
+}
+.textbox {
+	width: 50%;
+}
+.alert {
+	width: 75%;
+}
+.uk-field-set {
+	border: 0;
+}
+.uk-table {
+	background-color: #fff;
+}
+.uk-select {
+	width: 25%;
+}
+.backwhite {
+	background-color: #fff;
+}
